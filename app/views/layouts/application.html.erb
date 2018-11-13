@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Pageweb</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+        <ul>
+        <li><img src="https://files.cults3d.com/uploaders/13397846/illustration-file/05955fd8-d99f-4fe4-8c91-1f4c726d1b0f/Capture%20d%E2%80%99e%CC%81cran%202017-12-14%20a%CC%80%2014.34.13_large.png" alt="avatar" class="avatar" style="float:left"></li>
+        <li><a href="#home">Zybouric</a></li>
+        <li><a href="#news" >News</a></li>
+        <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <li style="float:right"><a class="active" href="#" >Login</a>    
+            <li style="float:right"><a class="active" href="#" >Register</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  <h1>
+  <button class="tablink" onclick="openCity('London', this, 'red')" id="defaultOpen">London</button>
+  <button class="tablink" onclick="openCity('Paris', this, 'green')">Paris</button>
+  <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">Tokyo</button>
+  <button class="tablink" onclick="openCity('Oslo', this, 'orange')">Oslo</button> 
+  </h1>
+
+    <h2>
+      <div class="card">
+        <img src="https://files.cults3d.com/uploaders/13397846/illustration-file/05955fd8-d99f-4fe4-8c91-1f4c726d1b0f/Capture%20d%E2%80%99e%CC%81cran%202017-12-14%20a%CC%80%2014.34.13_large.png" alt="Avatar" width="50%" height="50% style="center">
+        <div class="container">
+          <h4><b>Name: </b></h4> 
+          <p>Function: </p> 
+        </div>
+      </div>
+
+    </h2>
+
+       <footer>
+         <ul>
+            <li><a href="#home">CGU</a></li>
+            <li><a href="#news" >Mise en place by Zybouric</a></li>
+              <li style="float:right"><a href="https://www.facebook.com/"><img src="https://i2.wp.com/gusandco.net/wp-content/uploads/2018/01/logo-facebook.png?fit=512%2C512&ssl=1"height="40" width="40"></a>
+
+             <li style="float:right"><a href="https://www.instagram.com/?hl=fr"><img src="https://png.pngtree.com/element_our/md/20180506/md_5aeee1cb35919.png" height="40" width="40"></a>
+
+             <li style="float:right"><a href="https://twitter.com/"><img src="http://www.stickpng.com/assets/images/580b57fcd9996e24bc43c53e.png" height="40" width="40"></a>
+
+             <li style="float:right"><a href="https://fr.linkedin.com/"><img src="https://images.vexels.com/media/users/3/137382/isolated/preview/c59b2807ea44f0d70f41ca73c61d281d-linkedin-icon-logo-by-vexels.png" height="40" width="40"></a>
+          </ul>
+        </footer> 
+    <%= yield %>
+  </body>
+</html>
