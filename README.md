@@ -18,7 +18,7 @@
  
 </ol>
 
-  <p> To see the final result go [https://powerful-wave-66614.herokuapp.com] 
+  <p> To see the final result go [https://landing-page-zyb.herokuapp.com/] 
 
 ## ![Image of form](https://images.lookhuman.com/render/standard/Eym220v8OHIlCK64m4trcnPIVG4rO3PT/greetingcard45-off_white-z1-t-i-m-sorry-i-m-just-a-potato.jpg)
 
